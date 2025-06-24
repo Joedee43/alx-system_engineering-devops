@@ -1,3 +1,2 @@
 #!/bin/bash
-Myuser="john"
-echo "hello $Myuser"
+echo "hello $(whoami)"
