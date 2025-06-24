@@ -1,2 +1,2 @@
 #!/bin/bash
-export "hello $USER"
+printf "hello $USER"
