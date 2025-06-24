@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "PATH=$PATH:/action"
+export PATH="$PATH:/action"
+source ./2-path
