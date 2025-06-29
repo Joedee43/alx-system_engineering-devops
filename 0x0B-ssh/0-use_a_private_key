@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script connects to a server using a specific SSH private key.
+
+KEY_PATH="$HOME/.ssh/school"
+SERVER="ubuntu@1283413-web-01"
+
+# Check if the key file exists
+if [ ! -f "$KEY_PATH" ]; then
+    echo "Error: SSH key file not found at $KEY_PATH"
+    exit 1
+fi
+
+# Connect to the server
+ssh -i "$KEY_PATH" "$SERVER"
