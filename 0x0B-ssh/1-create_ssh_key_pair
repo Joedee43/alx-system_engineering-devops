@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
-# Creating ssh key pair 
-ssh-keygen -b 4096 -f school -t rsa -N betty
+# Creating ssh key pair
+
+rm -f school school.pub  # Remove if already exists
+
+ssh-keygen -t rsa -b 4096 -f school -N "betty"
