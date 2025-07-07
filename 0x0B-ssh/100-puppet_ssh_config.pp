@@ -1,4 +1,5 @@
-# Puppet script to configure SSH client
+# Client configuration file with Puppet
+include stdlib
 
 file_line { 'Declare identity file':
   path  => '/home/vagrant/.ssh/config',
